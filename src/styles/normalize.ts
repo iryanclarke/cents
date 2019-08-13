@@ -22,10 +22,15 @@ export default `
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: ${fonts.sansSerif};
-    color: ${colors.black};
-    background-color: ${colors.white};
+    font-size: ${dimensions.fontSize.regular}px;
+    font-style: normal;
+    font-weight: 400;
+    color: ${colors.white};
+    background-color: ${colors.black};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   a {
@@ -86,7 +91,8 @@ export default `
   h1, h2, h3, h4, h5, h6 {
     margin-top: 1.414rem;
     margin-bottom: .5rem;
-    color: ${colors.black};
+    color: ${colors.white};
+    font-family: ${fonts.serif};
     font-weight: 600;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;
@@ -95,6 +101,7 @@ export default `
   h1 {
     margin-top: 0;
     font-size: ${dimensions.headingSizes.h1}rem;
+    font-weight: 700;
   }
 
   h2 {
@@ -110,6 +117,7 @@ export default `
   }
 
   p {
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 1rem;
   }

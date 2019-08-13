@@ -18,13 +18,13 @@ export const colors = {
     calm: 'rgba(0, 0, 0, 0.54)'
   },
   white: '#fff',
-  black: '#000'
+  black: 'rgb(17, 18, 22)'
 }
 
 export const fonts = {
   sansSerif:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
+  serif: 'Merriweather, Georgia, "Times New Roman", Times, serif',
   monospace: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 }
 
@@ -44,8 +44,8 @@ export const widths = {
 
 export const dimensions = {
   fontSize: {
-    regular: 16,
-    large: 18
+    regular: 18,
+    large: 20
   },
   headingSizes: {
     h1: 2.441,
@@ -54,8 +54,8 @@ export const dimensions = {
     h4: 1.25
   },
   lineHeight: {
-    regular: 1.45,
-    heading: 1.2
+    regular: 1.756,
+    heading: 1.32
   },
   containerPadding: 1.5
 }
