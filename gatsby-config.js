@@ -1,5 +1,7 @@
 'use strict'
 
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: 'gatsby-starter-typescript-plus',
@@ -49,6 +51,15 @@ module.exports = {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        pages: path.join(__dirname, 'src/pages'),
+        styles: path.join(__dirname, 'src/styles'),
+        components: path.join(__dirname, 'src/components')
       }
     },
     'gatsby-plugin-emotion',

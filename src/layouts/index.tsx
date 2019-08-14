@@ -41,7 +41,10 @@ const IndexLayout: React.FC = ({ children }) => (
           ]}
         />
         <Helmet>
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Merriweather:300,400,700&display=swap"
+            rel="stylesheet"
+          />
         </Helmet>
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
